@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TapViewController" customModule="RxExmpleDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="numberLabel" destination="8a3-nW-TQm" id="rTM-nN-QOQ"/>
+                <outlet property="resetBtn" destination="9yV-rK-F0B" id="i8q-JB-1CM"/>
+                <outlet property="tapBtn" destination="KAa-6F-CcI" id="cPH-ED-Hg3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8a3-nW-TQm">
+                    <rect key="frame" x="0.0" y="150" width="375" height="124"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="124" id="fRo-hm-qM5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAa-6F-CcI">
+                    <rect key="frame" x="0.0" y="304" width="375" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="svZ-od-4iB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                    <state key="normal" title="Tap"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yV-rK-F0B">
+                    <rect key="frame" x="0.0" y="404" width="375" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="BIc-23-jh9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                    <state key="normal" title="ReSet"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9yV-rK-F0B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="GSz-Tc-di4"/>
+                <constraint firstItem="8a3-nW-TQm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="150" id="LdQ-zc-iXv"/>
+                <constraint firstItem="KAa-6F-CcI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="M0M-4F-VOB"/>
+                <constraint firstItem="KAa-6F-CcI" firstAttribute="top" secondItem="8a3-nW-TQm" secondAttribute="bottom" constant="30" id="OEj-bq-Z25"/>
+                <constraint firstAttribute="trailing" secondItem="KAa-6F-CcI" secondAttribute="trailing" id="PtI-rD-3Kh"/>
+                <constraint firstItem="8a3-nW-TQm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dGd-ws-6Rw"/>
+                <constraint firstAttribute="trailing" secondItem="9yV-rK-F0B" secondAttribute="trailing" id="dOO-3s-8Wb"/>
+                <constraint firstItem="9yV-rK-F0B" firstAttribute="top" secondItem="KAa-6F-CcI" secondAttribute="bottom" constant="25" id="u7o-fq-dcU"/>
+                <constraint firstAttribute="trailing" secondItem="8a3-nW-TQm" secondAttribute="trailing" id="zg7-dq-BwI"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="51.5"/>
+        </view>
+    </objects>
+</document>
