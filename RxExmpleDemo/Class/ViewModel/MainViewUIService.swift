@@ -74,11 +74,17 @@ class MainViewUIService: NSObject, UITableViewDelegate,UITableViewDataSource {
             
             self.mainVC.navigationController?.pushViewController(testTableViewVC, animated: true)
             
-        }else if indexPath.row == 6{
+        }else if indexPath.row == 6 {
         
             let LocalDataVC = LocalDataViewController()
             
             self.mainVC.navigationController?.pushViewController(LocalDataVC, animated: true)
+            
+        }else if indexPath.row == 7 {
+        
+            let addPostVC = AddPostViewController()
+            
+            self.mainVC.navigationController?.pushViewController(addPostVC, animated: true)
             
         }
     }

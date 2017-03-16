@@ -15,7 +15,7 @@ class MainViewModelService: NSObject {
     
     func creatData(){
         
-        let titleArray = ["Tap","GetDateAndTime","SwipeDismissKeyBoard","AddPhoto","PullToRefresh","TableTest","LocalDataViewController"]
+        let titleArray = ["Tap","GetDateAndTime","SwipeDismissKeyBoard","AddPhoto","PullToRefresh","TableTest","LocalDataViewController","AddPostVC"]
         
         let count = titleArray.count
         
